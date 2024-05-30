@@ -29,8 +29,13 @@ onload = () => {
   //   );
 
   const messageDiv = document.getElementById("message");
+  var muscle = String.fromCodePoint(0x1f4aa);
   var heart = String.fromCodePoint(0x2764);
-  let message = "I love you, bali " + heart;
+  let message =
+    "Thank you for everything that you do" +
+    muscle +
+    "\nWe really appreciate you " +
+    heart;
   messageDiv.textContent = message;
   setTimeout(() => {
     messageDiv.classList.add("fade-in");
